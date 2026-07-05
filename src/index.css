@@ -1,0 +1,65 @@
+:root {
+  /* Color Palette */
+  --bg-main: #0a0c10;
+  --bg-card: rgba(18, 22, 28, 0.7);
+  --bg-input: #151922;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(254, 44, 85, 0.3);
+  
+  --text-primary: #f5f6f9;
+  --text-secondary: #8f9cae;
+  --text-muted: #5e6b7e;
+  
+  --accent-tiktok: #fe2c55;
+  --accent-cyan: #25f4ee;
+  --accent-gold: #e5c158;
+  --accent-gold-gradient: linear-gradient(135deg, #f3d078, #d4af37);
+  --bg-gradient: radial-gradient(circle at top left, #1c1d24, #0b0c10);
+  
+  /* Fonts */
+  --font-arabic: 'Cairo', 'Tajawal', system-ui, sans-serif;
+  --font-english: 'Outfit', system-ui, sans-serif;
+  
+  font-family: var(--font-arabic);
+  color-scheme: dark;
+  color: var(--text-primary);
+  background: var(--bg-main);
+  background-image: var(--bg-gradient);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-arabic);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2532;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
